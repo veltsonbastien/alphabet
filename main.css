@@ -1,0 +1,147 @@
+body{
+    background-color: #222222; 
+    position: relative; 
+    font-family: 'Permanent Marker', cursive;
+}
+
+button{
+    outline: none; 
+}
+
+
+.enter-btn{
+    padding: 10px 25px;
+    background: none;
+    color: white; 
+    position: absolute; 
+    left: 50%; 
+    top: 500px; 
+    transform: translate(-50%,-50%);  
+    font-size: 40px; 
+    text-transform: UPPERCASE; 
+    animation: pulse 2s infinite; 
+    animation-timing-function: ease-in-out; 
+    border: none; 
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1; 
+    }
+    50% {
+        opacity: 0.4; 
+    }
+    100%{
+        opacity: 1; 
+    }
+}
+
+
+.newsletter-signup{ 
+ width: 40%;
+ transform: translateX(80%);
+ margin-top: 10%;
+}
+
+@media only screen and (max-width: 854px){ 
+    /*fixing the inner forms on newsletter signup*/
+      .newsletter-signup{
+          width: 60%;
+          transform: translateX(40%);  
+      }
+    } 
+
+    @media only screen and (max-width: 588px){ 
+        /*fixing the inner forms on newsletter signup*/
+          .newsletter-signup{
+              width: 80%;
+              transform: translateX(15%);  
+          }
+        } 
+
+        @media only screen and (max-width: 442px){ 
+            /*fixing the inner forms on newsletter signup*/
+              .newsletter-signup{
+                  width: 90%;
+                  transform: translateX(5%);  
+              }
+            } 
+
+            @media only screen and (max-width: 396px){ 
+                /*fixing the inner forms on newsletter signup*/
+                  .newsletter-signup{
+                      width: 97.5%;
+                      transform: translateX(2.5%);  
+                  }
+                } 
+
+                @media only screen and (max-height: 442px){ 
+                    /*fixing the inner forms on newsletter signup*/
+                      .newsletter-signup{
+                          width: 90%;
+                          transform: translateX(5%);  
+                      }
+                    } 
+            
+                    @media only screen and (min-height: 823px){ 
+                        /*fixing the inner forms on newsletter signup*/
+                          .newsletter-signup{
+                             margin-top: 50%;
+                          }
+                        } 
+
+                        @media only screen and (max-height: 420px){ 
+                            /*fixing the inner forms on newsletter signup*/
+                              .newsletter-signup{
+                                 margin-top: 5%;
+                              }
+                              .enter-btn{
+                                  top: 300px; 
+                              }
+                            } 
+
+                            @media only screen and (max-height: 320px){ 
+                                /*fixing the inner forms on newsletter signup*/
+                                  .newsletter-signup{
+                                     margin-top: 5%;
+                                  }
+                                  .enter-btn{
+                                      top: 270px; 
+                                  }
+                                } 
+      
+.validate{
+ display: inline; 
+}
+
+.close-popup{
+    position: absolute; 
+}
+
+.close-popup {
+    position: absolute;
+    top: 1px;
+    font-size: 35px;
+    right: 0px;
+    font-family: arial;
+    line-height: 22px;
+    background-color: red;
+    border-width: 2px; 
+    border-color: #fef7f6;
+    border-radius: 3px;
+    color: #CCC;
+    outline: none; 
+}
+
+.close-popup:hover {
+  background-color: rgb(220,0,0); 
+}
+
+.newsletter-signup{
+    display: none; 
+}
+
+.newsletter-signup.showClass{
+    display: block;
+}
+
